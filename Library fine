@@ -28,7 +28,7 @@ public class Library{
 			rate = 0.1f;
 		}
 		double amount = fine;
-		System.out.println("fine amount: " + amount);
+		System.out.println("fine amount:Ksh " + amount);
 		System.out.println("fine rate: " + rate);
 	}
 }
