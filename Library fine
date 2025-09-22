@@ -12,22 +12,18 @@ public class Library{
 		System.out.print("enter Due Date: ");
 		Duedate = Scanner.nextInt();
 		int Days = Returndate - Duedate;
-				double fine;
 				float rate;
 		System.out.println("Days overdue: "+ Days);
 		if(Days>=15) {
-			fine = 100;
-			rate = 1.0f;
+			rate = 100f;
 		}
 		else if(Days>=8 && Days<15) {
-			fine =50;
-			rate = 0.5f;
+			rate = 50f;
 		}
 		else{
-			fine = 20;
-			rate = 0.1f;
+			rate = 20f;
 		}
-		double amount = fine;
+		double amount = rate*Days;
 		System.out.println("fine amount:Ksh " + amount);
 		System.out.println("fine rate: " + rate);
 	}
