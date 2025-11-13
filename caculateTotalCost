@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class CalculateTotalCost {
+
+	public static void main(String[] args) {
+		Scanner Scanner = new Scanner(System.in); // create scanner to read input from user
+		// declare variables to store data
+		double accomodationCost;
+		double mealCost;
+		double activityCost;
+		  //display a welcome message
+		System.out.println("welcome to the hotel");
+		  //ask the user to input required information
+		System.out.println("input acomadtion cost: ");
+		accomodationCost = Scanner.nextDouble(); // read double value
+		System.out.println("input the mealcost: ");
+		mealCost = Scanner.nextDouble();
+		System.out.println("input activitycost: ");
+		activityCost = Scanner.nextDouble();
+		  //calculate the total cost by adding all the inputs
+		double totalCost = accomodationCost+mealCost+activityCost;
+		System.out.print("THE TOTAL COST IS:$ "+totalCost); //display total cost
+		
+		// close scanner object to free system resources
+		Scanner.close();
+
+	}
+
+}
