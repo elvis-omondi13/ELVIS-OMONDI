@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+ //define the class name 
+public class Gefitnesslevel {
+	public static void main(String[] args) {
+		// declare variable to store number of steps
+		 int steps;
+		 // create scanner object to read the input from the user
+		 Scanner Scanner = new Scanner(System.in);
+		 System.out.println("welcome to GEFITNESSLEVEL");
+		 //ask the user to input number of steps covered
+		 System.out.println("INPUT THE NUMBER OF STEPS COVERED");
+		 steps = Scanner.nextInt();
+     System.out.println("your fitness level");
+		 //check fitness level based on steps
+		 if(steps >= 10000){
+			 System.out.println("Excellent"); 
+		 }
+		 else if(steps >= 7000 && steps < 10000){
+			 System.out.println("Good");
+		 }
+		 else if(steps>= 4000 && steps < 7000){
+			 System.out.println("Average");
+		 }
+		 else {
+			 System.out.println("Poor");
+		 }
+		 //close scanner object to prevent system resource leaks
+ Scanner.close();
+	}
+
+}
